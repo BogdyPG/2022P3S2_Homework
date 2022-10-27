@@ -3,13 +3,15 @@ package Main;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Player {
+public class Player
+{
     private String name;
     private String pawnShape;
     private int cash;
     private int boardLocation;
 
-    public Player() {
+    public Player()
+    {
         OutputDevice od = new OutputDevice();
         Scanner scan = new Scanner(System.in);
         od.writeMessage("Name: ");
@@ -27,21 +29,26 @@ public class Player {
         return rand.nextInt(2,12);
     }
 
-    public int getBoardLocation() {
+    public int getBoardLocation()
+    {
         return boardLocation;
     }
-    public int getCash(){
+    public int getCash()
+    {
         return cash;
     }
-    public String getName(){
+    public String getName()
+    {
         return name;
     }
 
-    public void movePlayer(int diceRoll){
+    public void movePlayer(int diceRoll)
+    {
         this.boardLocation += diceRoll;
-        if(this.boardLocation >= 39){
+        if(this.boardLocation >= 39)
+        {
             this.boardLocation = this.boardLocation - 40;
-            this.cash += 200;}
+            this.cash += 200;
+        }
     }
-
 }

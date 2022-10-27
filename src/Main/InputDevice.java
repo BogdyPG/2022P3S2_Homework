@@ -1,8 +1,8 @@
 package Main;
-import java.util.Random;
-import java.util.Scanner;
 
-public class InputDevice {
+//import java.util.Random;
+//import java.util.Scanner;
 
-
+public class InputDevice
+{
 }
